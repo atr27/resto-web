@@ -124,7 +124,7 @@
         function deleteItem(index) {
             var item = listItem[index];
             if (item.quantity > 1) {
-                item.quantity -= 1;
+                item.quantity[index] -= 1;
                 updateTotalHarga(-(item.harga))
                 updateQuantityItem(-1)
             } else {
